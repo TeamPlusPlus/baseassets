@@ -1,0 +1,84 @@
+/*
+ * Font loading
+ * @file     fonts.scss
+ * @author   Lukas Bestle <http://lu-x.me>
+ */
+
+// Code Bold
+@font-face {
+	font-family: Code;
+	src: url('../base/fonts/code_bold.eot');
+	src: url('../base/fonts/code_bold.eot?#iefix')            format('embedded-opentype'),
+	     url('../base/fonts/code_bold.woff')                  format('woff'),
+	     url('../base/fonts/code_bold.ttf')                   format('truetype'),
+	     url('../base/fonts/code_bold.svg#code_boldregular')  format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// Code Light
+@font-face {
+	font-family: 'Code Light';
+	src: url('../base/fonts/code_light.eot');
+	src: url('../base/fonts/code_light.eot?#iefix')            format('embedded-opentype'),
+	     url('../base/fonts/code_light.woff')                  format('woff'),
+	     url('../base/fonts/code_light.ttf')                   format('truetype'),
+	     url('../base/fonts/code_light.svg#code_lightregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// Lato
+@font-face {
+	font-family: Lato;
+	src: url('../base/fonts/lato.eot');
+	src: url('../base/fonts/lato.eot?#iefix')                  format('embedded-opentype'),
+	     url('../base/fonts/lato.woff')                        format('woff'),
+	     url('../base/fonts/lato.ttf')                         format('truetype'),
+	     url('../base/fonts/lato.svg#LatoRegular')             format('svg');
+	font-weight: lighter;
+	font-style: normal;
+}
+
+// Nevis
+@font-face {
+	font-family: Nevis;
+	src: url('../base/fonts/nevis.eot');
+	src: url('../base/fonts/nevis.eot?#iefix')                 format('embedded-opentype'),
+	     url('../base/fonts/nevis.woff')                       format('woff'),
+	     url('../base/fonts/nevis.ttf')                        format('truetype'),
+	     url('../base/fonts/nevis.svg#webfontbold')            format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+// Icomoon
+@font-face {
+	font-family: Icomoon;
+	src: url('../base/fonts/icomoon.eot');
+	src: url('../base/fonts/icomoon?#iefix')                   format('embedded-opentype'),
+	     url('../base/fonts/icomoon.woff')                     format('woff'),
+	     url('../base/fonts/icomoon.ttf')                      format('truetype'),
+	     url('../base/fonts/icomoon.svg#icomoon-ultimate')     format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[data-icon]:before {
+	font-family: Icomoon;
+	content: attr(data-icon);
+	
+	padding-right: 5px;
+	
+	position: relative;
+	top: 2px;
+	
+	speak: none;
+	
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	
+	-webkit-font-smoothing: antialiased;
+}

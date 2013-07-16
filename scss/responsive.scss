@@ -1,0 +1,76 @@
+/*
+ * Responsive design stuffz
+ * @file     responsive.scss
+ * @author   Lukas Bestle <http://lu-x.me>
+ */
+
+// Footer content slides into each other
+@media screen and (max-width: 1000px) {
+	section.main {
+		padding-bottom: 125px;
+	}
+	
+	footer {
+		p {
+			padding: 0 20px;
+		}
+		div {
+			position: static;
+			text-align: center;
+			margin-bottom: 5px;
+		}
+	}
+}
+
+// Navigation is too narrow
+// Floated images are corrupting text
+@media screen and (max-width: 730px) {
+	.nomobile {
+		display: none;
+	}
+	
+	nav {
+		position: static !important;
+		
+		.logo {
+			display: none;
+		}
+		
+		li {
+			display: block !important;
+			
+			margin: 0 !important;
+			
+			.active, .open {
+				color: $brand-color;
+				
+				&:before, &:after {
+					display: none;
+				}
+			}
+			.open {
+				color: darken($brand-color, 20);
+			}
+			
+			a {
+				text-align: center !important;
+			}
+		}
+	}
+	
+	.imgblock img {
+		float: none !important;
+		
+		display: block !important;
+		margin: auto !important;
+		
+		width: 100% !important;
+		height: auto;
+		
+		margin-bottom: 10px !important;
+	}
+	
+	.infos li {
+		display: block !important;
+	}
+}
