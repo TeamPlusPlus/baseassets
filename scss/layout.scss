@@ -121,6 +121,10 @@ section.main {
 		&.block li {
 			display: block;
 		}
+		
+		&.nomargintop {
+			margin-top: 0;
+		}
 	}
 	
 	ul {
