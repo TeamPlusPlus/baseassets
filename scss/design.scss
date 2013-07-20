@@ -118,14 +118,6 @@ section.main {
 	* {
 		user-select: text;
 	}
-	
-	.infos a {
-		color: black;
-		
-		&:hover {
-			color: $brand-color-dark;
-		}
-	}
 }
 
 // Footer
