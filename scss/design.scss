@@ -118,6 +118,10 @@ section.main {
 	* {
 		user-select: text;
 	}
+	
+	.infos a:before {
+		color: black;
+	}
 }
 
 // Footer
